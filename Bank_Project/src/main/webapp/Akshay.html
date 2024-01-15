@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<style>
+.container{
+width: 40%;
+border:1px solid black;
+margin: auto;  
+padding: 20px;
+}
+
+
+</style>
+</head>
+<body style="background-color:powderblue;">
+	<div class="container" >
+	<h1>Account Opening Form</h1>
+	<form action="RegistrationForm" >
+	<table>
+	<tr>
+		<td>Enter Your Id</td>	
+		<td><input type="text" name="user_id" placeholder="Enter id" required></td>
+	</tr>
+	<tr>
+		<td>Enter Your Name</td>
+		<td><input type="text" name="user_name" placeholder="Enter name" required></td>
+	</tr>	
+	<tr>
+		<td>Enter Your Address</td>
+		<td><textarea id="user_address" name="user_address" rows="4" cols="50" placeholder="Enter address..." required></textarea></td>
+	</tr>
+	<tr>
+		<td>Enter DOB</td>
+		<td><input type="date" name="date" placeholder="Enter date" required="required"></td>
+	</tr>
+	<tr>
+		<td>Enter Your Salary</td>
+        <td><select name="salaryRange">
+            <option value="1Lpa to 3Lpa">2Lpa to 5Lpa</option>
+            <option value="3Lpa to 5Lpa">5Lpa to 7Lpa</option>
+            <option value="5Lpa to 10Lpa">7Lpa to 10Lpa</option>
+            <option value="5Lpa to 10Lpa">10Lpa to 13Lpa</option>
+        </select></td>
+    </tr>
+    
+    
+    <tr>
+	    <td>Select Your Gender</td>
+		<td>
+		<input type="radio" name="user_gender" value="male">Male
+		<input type="radio" name="user_gender" value="female">Female
+		<input type="radio" name="user_gender" value="other">Other
+		</td>
+    </tr>
+    
+    
+     <tr>
+		<td>Type of account</td>
+		<td><select name="accountType" required="required">
+		<option value="saving">Saving</option>
+		<option value="current">Current</option>
+		<option value="salary">Salary</option>
+		</select></td>
+	</tr>
+	
+	
+     <tr>
+        <td>
+		<button type="submit">Register</button>
+		<button type="reset">Reset</button>
+		</td>
+    </tr>
+    
+   
+	
+    
+   
+	</table>	
+	</form>
+	</div>
+</body>
+</html>
+
+
+
+</html>
